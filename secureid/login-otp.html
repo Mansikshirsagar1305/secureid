@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Enter your code — SecureID</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="login-otp">
+  <div class="card">
+    <div class="icon-circle">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <h1>Enter your code</h1>
+    <p class="subtitle">Sent to <strong id="destination"></strong></p>
+
+    <div class="demo-banner" id="demoBanner"></div>
+    <div class="otp-banner" id="otpBanner" style="display:none;"></div>
+
+    <div class="otp-row">
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+    </div>
+
+    <div class="otp-status" id="otpStatus"></div>
+    <button type="button" class="resend-btn" id="resendBtn">Resend code</button>
+
+    <button type="button" class="btn btn-primary" id="continueBtn">Log in</button>
+
+    <p class="resend-row" id="resendRow">
+      Didn't receive the code?
+      <a href="#" id="resendLink">Resend code<span id="resendTimer"></span></a>
+    </p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

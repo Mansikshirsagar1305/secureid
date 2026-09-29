@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome back — SecureID</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="login">
+  <div class="card">
+    <div class="icon-circle" id="loginIcon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <h1>Welcome back!</h1>
+    <p class="subtitle">Log in to your account</p>
+
+    <form id="loginForm" novalidate>
+      <label for="email">Email or username</label>
+      <input type="email" id="email" name="email" placeholder="priya.sharma@email.com" autocomplete="username" />
+
+      <label for="password">Password</label>
+      <div class="password-wrap">
+        <input type="password" id="password" name="password" autocomplete="current-password" />
+        <button type="button" class="toggle-visibility" data-target="password" aria-label="Show password">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+      <div class="error-text" id="err-password"></div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;">
+        <label style="display:flex;align-items:center;gap:6px;margin:0;font-weight:400;">
+          <input type="checkbox" id="remember" style="margin:0;" /> Remember me
+        </label>
+        <a href="#" style="color:var(--blue-600);text-decoration:none;">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Log in</button>
+    </form>
+
+    <div class="divider">or</div>
+
+    <button type="button" class="btn btn-secondary" onclick="alert('Google sign-in is not wired up in this demo.')">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8Z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.3 21.3 7.3 24 12 24Z"/><path fill="#FBBC05" d="M5.4 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V6.6H1.4A12 12 0 0 0 0 12c0 1.9.5 3.8 1.4 5.4l4-3.1Z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.4.6 4.6 1.8l3.4-3.4C18 1.2 15.2 0 12 0 7.3 0 3.3 2.7 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8Z"/></svg>
+      Continue with Google
+    </button>
+
+    <p class="footer-link">New here? <a href="register.html">Create an account</a></p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

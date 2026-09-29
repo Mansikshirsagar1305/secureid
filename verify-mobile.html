@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Verify your mobile — SecureID</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="verify-mobile">
+  <div class="card">
+    <div class="stepper" id="stepper"></div>
+    <div class="icon-circle">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+    </div>
+    <h1>Verify your mobile</h1>
+    <p class="subtitle">We've sent a 6-digit code to<br /><strong id="destination"></strong></p>
+    <p class="change-number">Wrong number? <a href="register.html" class="inline-link">Change</a></p>
+
+    <div class="demo-banner" id="demoBanner"></div>
+    <div class="otp-banner" id="otpBanner" style="display:none;"></div>
+
+    <div class="otp-row">
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+      <input type="text" inputmode="numeric" maxlength="1" />
+    </div>
+
+    <div class="otp-status" id="otpStatus"></div>
+    <button type="button" class="resend-btn" id="resendBtn">Resend New Code</button>
+
+    <button type="button" class="btn btn-primary" id="continueBtn">Verify</button>
+
+    <p class="resend-row">
+      Didn't receive the code?
+      <a href="#" id="resendLink">Resend code<span id="resendTimer"></span></a>
+    </p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
